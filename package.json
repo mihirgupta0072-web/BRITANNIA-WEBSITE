@@ -1,0 +1,21 @@
+{
+  "name": "britannia-winkin-cow-animation",
+  "version": "1.0.0",
+  "description": "Britannia Winkin' Cow Strawberblicious Thick Shake - 210-Frame 3D Canvas Scroll Experience",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000",
+    "build": "echo 'Static build complete'"
+  },
+  "keywords": [
+    "britannia",
+    "winkin-cow",
+    "canvas-animation",
+    "scroll-driven-animation",
+    "3d-render",
+    "interactive-website"
+  ],
+  "author": "Mihir Gupta",
+  "license": "MIT"
+}

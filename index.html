@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Britannia Winkin' Cow | Strawberblicious Thick Shake - Interactive 3D Scroll</title>
+  <meta name="description" content="Experience the rich, creamy swirl of Britannia Winkin' Cow Strawberblicious Thick Shake in a high-definition interactive 3D scroll animation.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN & Extended Design System Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#0060a8",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#003663",
+            "surface-container-low": "#fff0f1",
+            "surface-variant": "#ffd9df",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#bd003c",
+            "outline": "#906f71",
+            "on-tertiary-container": "#ffffff",
+            "on-surface": "#370b19",
+            "surface-tint": "#be003c",
+            "on-primary-fixed-variant": "#91002c",
+            "on-error": "#ffffff",
+            "on-secondary-fixed": "#001c38",
+            "inverse-on-surface": "#ffecee",
+            "secondary-container": "#47a1ff",
+            "tertiary-container": "#867178",
+            "primary-fixed-dim": "#ffb2b8",
+            "outline-variant": "#e5bdbf",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#ffb2b8",
+            "surface-container-high": "#ffe1e5",
+            "on-tertiary-fixed": "#26171d",
+            "surface-container": "#ffe8eb",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#5c3f41",
+            "on-primary-container": "#ffffff",
+            "on-tertiary-fixed-variant": "#544248",
+            "tertiary-fixed-dim": "#d9c0c8",
+            "secondary-fixed": "#d3e4ff",
+            "primary-container": "#e61e50",
+            "surface": "#fff8f7",
+            "on-secondary": "#ffffff",
+            "background": "#fff8f7",
+            "tertiary": "#6c595f",
+            "secondary-fixed-dim": "#a2c9ff",
+            "on-primary-fixed": "#40000e",
+            "surface-container-highest": "#ffd9df",
+            "surface-dim": "#ffcdd6",
+            "on-secondary-fixed-variant": "#004881",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#ffdadb",
+            "on-background": "#370b19",
+            "tertiary-fixed": "#f6dce4",
+            "surface-bright": "#fff8f7",
+            "inverse-surface": "#52202e"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Animation & Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- Ambient Dynamic Background Glows -->
+  <div class="ambient-glow glow-top" id="ambient-top"></div>
+  <div class="ambient-glow glow-bottom" id="ambient-bottom"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-brand">
+        <span class="brand-sub">BRITANNIA</span>
+        <h2 class="brand-title">Winkin' Cow</h2>
+        <span class="flavor-tag">STRAWBERBLICIOUS THICK SHAKE</span>
+      </div>
+      
+      <div class="loader-visual">
+        <div class="bottle-loader-icon">
+          <svg viewBox="0 0 100 160" class="bottle-svg">
+            <defs>
+              <linearGradient id="shakeGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#FF1E62"/>
+                <stop id="milkStop" offset="50%" stop-color="#FFA8C5"/>
+                <stop offset="100%" stop-color="#FFFFFF"/>
+              </linearGradient>
+            </defs>
+            <!-- Cap -->
+            <rect x="35" y="10" width="30" height="14" rx="4" fill="#FFFFFF" stroke="#FF4D80" stroke-width="2"/>
+            <!-- Neck -->
+            <path d="M 37 24 L 63 24 L 65 38 L 35 38 Z" fill="#FFFFFF"/>
+            <!-- Body -->
+            <path d="M 35 38 C 22 45 18 65 22 95 C 24 112 20 135 24 148 C 26 154 32 156 50 156 C 68 156 74 154 76 148 C 80 135 76 112 78 95 C 82 65 78 45 65 38 Z" fill="url(#shakeGrad)" stroke="#FFFFFF" stroke-width="2"/>
+          </svg>
+          <div class="splash-particles">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="preloader-meta">
+        <span id="loader-percent" class="loader-percent">0%</span>
+        <span id="loader-status" class="loader-status">Preloading 210 Ultra-HD Animation Frames...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TRANSPARENT NAVIGATION BAR (Smoothly Scrolls to Specifications)
+       ========================================================================== -->
+  <header class="top-transparent-navbar" id="top-navbar">
+    <div class="nav-wrapper">
+      
+      <!-- Brand Logo -->
+      <a href="#scroll-hero" class="nav-brand-group" id="nav-brand-logo">
+        <span class="nav-brand-corp">BRITANNIA</span>
+        <span class="nav-brand-title">Winkin' Cow<span class="nav-brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu (Scrolls to each specification) -->
+      <nav class="nav-specification-menu" id="nav-spec-menu">
+        <a href="#scroll-hero" class="nav-menu-link active" data-target="scroll-hero">
+          <span class="menu-sparkle">✦</span> 3D Experience
+        </a>
+        <a href="#sensory-section" class="nav-menu-link" data-target="sensory-section">
+          Sensory Bliss
+        </a>
+        <a href="#nutrition-section" class="nav-menu-link" data-target="nutrition-section">
+          Nutrition Specs
+        </a>
+        <a href="#packs-section" class="nav-menu-link" data-target="packs-section">
+          Packs & Flavours
+        </a>
+        <a href="#recipes-section" class="nav-menu-link" data-target="recipes-section">
+          Café Recipes
+        </a>
+        <a href="#reviews-section" class="nav-menu-link" data-target="reviews-section">
+          Reviews
+        </a>
+        <a href="#delivery-faq-section" class="nav-menu-link" data-target="delivery-faq-section">
+          Delivery & FAQ
+        </a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="nav-cta-group">
+        <button id="nav-toggle-autoplay" class="nav-play-pill" title="Toggle Auto-Play full sequence">
+          <svg id="nav-play-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          <span id="nav-play-text">Auto Play</span>
+        </button>
+
+        <a href="#packs-section" class="nav-order-pill">
+          <span>Order Now</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <a href="#scroll-hero" class="mobile-menu-link active" data-target="scroll-hero">✦ 3D Experience</a>
+      <a href="#sensory-section" class="mobile-menu-link" data-target="sensory-section">Sensory Bliss</a>
+      <a href="#nutrition-section" class="mobile-menu-link" data-target="nutrition-section">Nutrition Specs</a>
+      <a href="#packs-section" class="mobile-menu-link" data-target="packs-section">Packs & Flavours</a>
+      <a href="#recipes-section" class="mobile-menu-link" data-target="recipes-section">Café Recipes</a>
+      <a href="#reviews-section" class="mobile-menu-link" data-target="reviews-section">Reviews</a>
+      <a href="#delivery-faq-section" class="mobile-menu-link" data-target="delivery-faq-section">Delivery & FAQ</a>
+      <a href="#packs-section" class="mobile-order-btn">Order Chilled Winkin' Cow</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN SCROLL ANIMATION SECTION (Untouched, Full 210 Frames Experience)
+       ========================================================================== -->
+  <section class="scroll-hero" id="scroll-hero">
+    <div class="scroll-track" id="scroll-track">
+      
+      <!-- Sticky Viewport Wrapper -->
+      <div class="sticky-viewport" id="sticky-viewport">
+        
+        <!-- Canvas Rendering 210 Frames -->
+        <canvas id="animation-canvas" class="animation-canvas"></canvas>
+
+        <!-- Overlay Vignettes and Lighting Gradients -->
+        <div class="canvas-vignette"></div>
+
+        <!-- Narrative Chapter Overlay Cards (Fade in/out dynamically based on frame index) -->
+        <div class="story-overlays" id="story-overlays">
+          
+          <!-- Chapter 1 (Frames 0 - 50) -->
+          <div class="story-card active" id="chapter-1" data-start="0" data-end="48">
+            <div class="chapter-badge">01 // THE PURITY</div>
+            <h1 class="chapter-title">Rich Homogenized Milk</h1>
+            <p class="chapter-desc">Starting with select rich dairy milk, whipped and chilled to velvety perfection.</p>
+            <div class="chapter-highlight">
+              <span class="sparkle">✦</span> 100% Wholesome Dairy Goodness
+            </div>
+          </div>
+
+          <!-- Chapter 2 (Frames 49 - 105) -->
+          <div class="story-card" id="chapter-2" data-start="49" data-end="105">
+            <div class="chapter-badge">02 // THE VORTEX</div>
+            <h2 class="chapter-title">The Velvety Whirlpool</h2>
+            <p class="chapter-desc">Swirled at high speed into a dynamic spiral that builds intense creaminess in every droplet.</p>
+            <div class="chapter-highlight">
+              <span class="sparkle">✦</span> 3X Thicker Whipped Consistency
+            </div>
+          </div>
+
+          <!-- Chapter 3 (Frames 106 - 165) -->
+          <div class="story-card" id="chapter-3" data-start="106" data-end="165">
+            <div class="chapter-badge">03 // THE FUSION</div>
+            <h2 class="chapter-title">Strawberry Splash</h2>
+            <p class="chapter-desc">Ripe, sun-kissed strawberries plunge into the heart of the creamy swirl, turning it irresistibly pink.</p>
+            <div class="chapter-highlight">
+              <span class="sparkle">✦</span> Authentic Fruity Bliss
+            </div>
+          </div>
+
+          <!-- Chapter 4 (Frames 166 - 209) -->
+          <div class="story-card" id="chapter-4" data-start="166" data-end="209">
+            <div class="chapter-badge">04 // THE MASTERPIECE</div>
+            <h2 class="chapter-title">Winkin' Cow Strawberblicious</h2>
+            <p class="chapter-desc">The ultimate thick shake is born! Bursting with strawberry joy, bottled cold and ready to savor.</p>
+            <div class="chapter-cta-row">
+              <button id="replay-btn" class="btn-accent">Replay Animation ↺</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Floating Interactive Control Dock (HUD) -->
+        <div class="animation-hud" id="animation-hud">
+          <div class="hud-panel glass-card">
+            
+            <!-- Play / Pause Button -->
+            <button id="hud-play-btn" class="hud-btn" title="Toggle Auto-Play (Spacebar)" aria-label="Auto-Play">
+              <svg id="hud-play-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </button>
+
+            <!-- Scrubber Timeline -->
+            <div class="hud-scrubber-group">
+              <div class="scrubber-track-wrap">
+                <input type="range" id="frame-scrubber" min="0" max="209" value="0" step="1" aria-label="Frame Scrubber">
+                <div class="scrubber-fill" id="scrubber-fill"></div>
+              </div>
+            </div>
+
+            <!-- Frame Counter / Info -->
+            <div class="hud-frame-indicator">
+              <span class="frame-tag">FRAME</span>
+              <span id="hud-frame-num" class="frame-number">001</span>
+              <span class="frame-divider">/</span>
+              <span class="frame-total">210</span>
+              <span id="hud-percent" class="frame-percent">(0%)</span>
+            </div>
+
+            <!-- Fit Mode Toggle (Cover vs Contain) -->
+            <button id="hud-fit-btn" class="hud-btn hud-btn-text" title="Switch Container Fit Mode">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+              <span id="fit-mode-label">Fit: Cover</span>
+            </button>
+
+            <!-- Sound FX Toggle -->
+            <button id="hud-sound-btn" class="hud-btn" title="Toggle Sound FX">
+              <svg id="sound-icon-on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <svg id="sound-icon-off" class="hidden" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+            </button>
+
+          </div>
+          
+          <div class="scroll-helper-hint" id="scroll-hint">
+            <span class="mouse-icon">
+              <span class="mouse-wheel"></span>
+            </span>
+            <span>Scroll down or press Space to explore all 210 frames</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REMAINING SECTIONS (Added directly below the scroll animation)
+       ========================================================================== -->
+  <main class="w-full bg-surface font-body-md text-body-md text-on-surface antialiased relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+    <div class="flex flex-col w-full">
+
+      <!-- SECTION 2: SENSORY & TASTE EXPERIENCE ("Why You'll Fall In Love") -->
+      <section class="max-w-7xl mx-auto px-margin py-space-2xl w-full" id="sensory-section">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xl">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Sensory Bliss</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">The Anatomy of Velvety Rose Goodness</h2>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Every bottle is a masterclass in balance—uniting heritage floral perfumery with Britannia's century-old dairy craftsmanship.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+          <!-- Card 1 -->
+          <div class="group bg-surface-container-lowest p-space-xl rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div class="flex flex-col gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-surface-container-high text-primary flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">spa</span>
+              </div>
+              <div class="flex flex-col gap-space-xs">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Damask Rose Aroma</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Distilled aromatic notes of native Damask petals that immediately awaken the senses with genuine, natural floral calmness.
+                </p>
+              </div>
+            </div>
+            <div class="pt-space-md mt-space-md bg-surface-container-low/50 p-space-sm rounded-DEFAULT flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-outline">Floral Intensity</span>
+              <span class="font-label-sm text-label-sm text-primary font-extrabold">94% Natural Perfume</span>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="group bg-surface-container-lowest p-space-xl rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div class="flex flex-col gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-surface-container text-secondary flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">water</span>
+              </div>
+              <div class="flex flex-col gap-space-xs">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Velvety Creaminess</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Double-toned homogenized milk processed under aseptic conditions delivers an ultra-smooth, silky mouthfeel without heavy greasiness.
+                </p>
+              </div>
+            </div>
+            <div class="pt-space-md mt-space-md bg-surface-container-low/50 p-space-sm rounded-DEFAULT flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-outline">Viscosity Profile</span>
+              <span class="font-label-sm text-label-sm text-secondary font-extrabold">Medium-Thick Velvet</span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="group bg-surface-container-lowest p-space-xl rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div class="flex flex-col gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">ac_unit</span>
+              </div>
+              <div class="flex flex-col gap-space-xs">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Sub-Zero Chill</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Engineered to drink frosty at 4°C. Perfect mid-day refresh button, sunny afternoon thirst quencher, or post-workout hydration.
+                </p>
+              </div>
+            </div>
+            <div class="pt-space-md mt-space-md bg-surface-container-low/50 p-space-sm rounded-DEFAULT flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-outline">Ideal Temperature</span>
+              <span class="font-label-sm text-label-sm text-secondary font-extrabold">2°C – 4°C</span>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="group bg-surface-container-lowest p-space-xl rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div class="flex flex-col gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">candlestick_chart</span>
+              </div>
+              <div class="flex flex-col gap-space-xs">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Balanced Sweetness</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Precise brix regulation ensures sweetness flatters the floral undertone without leaving any cloying residue or aftertaste.
+                </p>
+              </div>
+            </div>
+            <div class="pt-space-md mt-space-md bg-surface-container-low/50 p-space-sm rounded-DEFAULT flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-outline">Sweetness Scale</span>
+              <span class="font-label-sm text-label-sm text-primary font-extrabold">Harmonious Light</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: NUTRITIONAL POWERHOUSE & INFOGRAPHIC -->
+      <section class="w-full bg-surface-container-low py-space-2xl" id="nutrition-section">
+        <div class="max-w-7xl mx-auto px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <!-- Visual Nutrition Box -->
+            <div class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-lg relative overflow-hidden">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-[28px]">fact_check</span>
+                  <span class="font-headline-sm text-headline-sm text-on-surface">Nutritional Spectrum</span>
+                </div>
+                <span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-md py-0.5 rounded-full font-bold">Per 180ml Bottle</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Crafted under strict dairy standards ensuring real milk nourishment without compromising your daily wellness goals.
+              </p>
+              <!-- SVG Donut Chart for Calcium & Daily Value -->
+              <div class="flex items-center justify-center py-space-md">
+                <div class="relative w-44 h-44 flex items-center justify-center">
+                  <svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+                    <circle class="text-surface-container-high" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="10"></circle>
+                    <circle class="text-primary transition-all duration-1000" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="163" stroke-linecap="round" stroke-width="10"></circle>
+                  </svg>
+                  <div class="absolute flex flex-col items-center text-center">
+                    <span class="font-headline-md text-headline-md text-primary font-extrabold">35%</span>
+                    <span class="font-label-sm text-label-sm text-on-surface leading-tight">Daily Calcium</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Metric Rows -->
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+                  <span class="font-body-sm text-body-sm text-on-surface">Energy</span>
+                  <span class="font-label-md text-label-md text-primary font-bold">148 kcal</span>
+                </div>
+                <div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+                  <span class="font-body-sm text-body-sm text-on-surface">Total Milk Protein</span>
+                  <span class="font-label-md text-label-md text-secondary font-bold">8.5 grams</span>
+                </div>
+                <div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+                  <span class="font-body-sm text-body-sm text-on-surface">Bioactive Calcium</span>
+                  <span class="font-label-md text-label-md text-primary font-bold">240 mg</span>
+                </div>
+                <div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+                  <span class="font-body-sm text-body-sm text-on-surface">Vitamins D &amp; B12</span>
+                  <span class="font-label-md text-label-md text-secondary font-bold">100% RDA Compliant</span>
+                </div>
+              </div>
+            </div>
+            <!-- Right Side: 4 Nutrition Cards -->
+            <div class="lg:col-span-7 flex flex-col gap-space-lg">
+              <div class="flex flex-col gap-space-xs">
+                <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Healthy Sip Guarantee</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">Nourishment Inside Every Wink</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Beverages shouldn't force you to choose between decadent indulgence and body fuel. Winkin' Cow delivers clean energy that keeps you powered.
+                </p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                <!-- Nutrition Feature 1 -->
+                <div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex items-start gap-space-md">
+                  <div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex-shrink-0 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">fitness_center</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-label-lg text-label-lg text-on-surface">8.5g Protein Per Serve</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Derived naturally from pure dairy casein and whey for healthy muscle repair and satiety.
+                    </p>
+                  </div>
+                </div>
+                <!-- Nutrition Feature 2 -->
+                <div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex items-start gap-space-md">
+                  <div class="w-12 h-12 rounded-full bg-secondary-fixed text-secondary flex-shrink-0 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">skeleton</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-label-lg text-label-lg text-on-surface">Bone-Density Calcium</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Supplies 35% of daily recommended calcium intake to fortify strong teeth and skeletal growth.
+                    </p>
+                  </div>
+                </div>
+                <!-- Nutrition Feature 3 -->
+                <div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex items-start gap-space-md">
+                  <div class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex-shrink-0 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">wb_sunny</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-label-lg text-label-lg text-on-surface">Vitamin D &amp; B12 Boost</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Fortified to accelerate active calcium absorption and support mental focus and cellular energy.
+                    </p>
+                  </div>
+                </div>
+                <!-- Nutrition Feature 4 -->
+                <div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex items-start gap-space-md">
+                  <div class="w-12 h-12 rounded-full bg-surface-container-high text-secondary flex-shrink-0 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">shield</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-label-lg text-label-lg text-on-surface">Zero Chemical Nasties</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Naturally vegetarian, gluten-free, low in sodium, with zero artificial chemical preservatives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: PACK OPTIONS & FLAVOUR SIBLINGS -->
+      <section class="max-w-7xl mx-auto px-margin py-space-2xl w-full" id="packs-section">
+        <!-- Pack Selectors -->
+        <div class="text-center max-w-2xl mx-auto pb-space-xl">
+          <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Pick Your Chill</span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Stock Up on Winkin' Cow Rose</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant pt-space-xs">
+            Delivered chilled to your doorstep in protective insulated packs.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pb-space-2xl">
+          <!-- Pack Option 1 -->
+          <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div class="flex flex-col gap-space-md">
+              <div class="flex justify-between items-center">
+                <span class="font-label-sm text-label-sm bg-surface-container px-space-md py-0.5 rounded-full text-outline font-bold">Quick Sipper</span>
+                <span class="font-label-sm text-label-sm text-outline">180ml Bottle</span>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="font-headline-md text-headline-md text-on-surface">Single Chiller</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Perfect companion for a quick walk, school tiffin, or office coffee swap.</p>
+              </div>
+              <div class="flex items-baseline gap-space-xs pt-space-xs">
+                <span class="font-headline-lg text-headline-lg text-primary font-extrabold">₹40</span>
+                <span class="font-body-sm text-body-sm text-outline">/ bottle</span>
+              </div>
+            </div>
+            <button class="mt-space-lg w-full py-space-sm rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors">
+              Add Single to Bag
+            </button>
+          </div>
+          <!-- Pack Option 2 (Featured) -->
+          <div class="relative bg-surface-container-lowest p-space-xl rounded-xl shadow-xl flex flex-col justify-between -translate-y-2">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary font-label-sm text-label-sm px-space-md py-1 rounded-full shadow-md font-bold uppercase tracking-wider flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px]">stars</span> Most Popular Chill
+            </div>
+            <div class="flex flex-col gap-space-md">
+              <div class="flex justify-between items-center">
+                <span class="font-label-sm text-label-sm bg-surface-variant text-primary px-space-md py-0.5 rounded-full font-bold">Save 8% OFF</span>
+                <span class="font-label-sm text-label-sm text-secondary font-bold">6 x 180ml</span>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="font-headline-md text-headline-md text-on-surface">Summer 6-Pack</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Keep the fridge filled for the entire work-week or sudden guest drop-ins.</p>
+              </div>
+              <div class="flex items-baseline gap-space-xs pt-space-xs">
+                <span class="font-headline-lg text-headline-lg text-primary font-extrabold">₹220</span>
+                <span class="font-body-sm text-body-sm text-outline line-through">₹240</span>
+              </div>
+            </div>
+            <button class="mt-space-lg w-full py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-md hover:scale-105 transition-all">
+              Order 6-Pack Special
+            </button>
+          </div>
+          <!-- Pack Option 3 -->
+          <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between hover:shadow-lg transition-all">
+            <div class="flex flex-col gap-space-md">
+              <div class="flex justify-between items-center">
+                <span class="font-label-sm text-label-sm bg-secondary-fixed text-secondary px-space-md py-0.5 rounded-full font-bold">Free Shipping</span>
+                <span class="font-label-sm text-label-sm text-outline">24 x 180ml</span>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="font-headline-md text-headline-md text-on-surface">Party Crate 24</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Ideal for weekend house parties, birthday gatherings, or family feasts.</p>
+              </div>
+              <div class="flex items-baseline gap-space-xs pt-space-xs">
+                <span class="font-headline-lg text-headline-lg text-primary font-extrabold">₹840</span>
+                <span class="font-body-sm text-body-sm text-outline line-through">₹960</span>
+              </div>
+            </div>
+            <button class="mt-space-lg w-full py-space-sm rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors">
+              Add Party Crate
+            </button>
+          </div>
+        </div>
+        <!-- SIBLING FLAVOURS SHOWCASE -->
+        <div class="bg-surface-container p-space-xl rounded-xl shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg">
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Britannia Dairy Lineup</span>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Meet The Winkin' Flavour Tribe</h3>
+            </div>
+            <a class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1" href="#scroll-hero">
+              Explore All Flavours <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+            <!-- Choco Shake -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+              <div class="w-16 h-16 rounded-full bg-[#4a2e18]/15 flex items-center justify-center text-[#4a2e18] mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[32px]">cookie</span>
+              </div>
+              <span class="font-label-md text-label-md text-on-surface font-bold">Thick Chocolate</span>
+              <span class="font-body-sm text-body-sm text-outline">Rich Belgian Cocoa</span>
+              <span class="mt-space-sm font-label-sm text-label-sm text-primary">₹40 • 180ml</span>
+            </div>
+            <!-- Creamy Vanilla -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+              <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[32px]">icecream</span>
+              </div>
+              <span class="font-label-md text-label-md text-on-surface font-bold">Creamy Vanilla</span>
+              <span class="font-body-sm text-body-sm text-outline">Bourbon Bean Mellow</span>
+              <span class="mt-space-sm font-label-sm text-label-sm text-primary">₹40 • 180ml</span>
+            </div>
+            <!-- Crunchy Butterscotch -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+              <div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-orange-700 mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[32px]">cake</span>
+              </div>
+              <span class="font-label-md text-label-md text-on-surface font-bold">Butterscotch Crunch</span>
+              <span class="font-body-sm text-body-sm text-outline">Golden Caramel Beads</span>
+              <span class="mt-space-sm font-label-sm text-label-sm text-primary">₹40 • 180ml</span>
+            </div>
+            <!-- Sweet Badam -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+              <div class="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-space-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[32px]">energy_savings_leaf</span>
+              </div>
+              <span class="font-label-md text-label-md text-on-surface font-bold">Almond Badam</span>
+              <span class="font-body-sm text-body-sm text-outline">Crushed Real Nut Bites</span>
+              <span class="mt-space-sm font-label-sm text-label-sm text-primary">₹40 • 180ml</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: CHILLER CAFÉ (DIY RECIPES) -->
+      <section class="w-full bg-surface py-space-2xl" id="recipes-section">
+        <div class="max-w-7xl mx-auto px-margin">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xl">
+            <div class="flex flex-col gap-space-xs">
+              <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Home Mixology</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">The Winkin' Café: 3-Minute DIY Recipes</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Elevate your daily milk break into an artisanal dessert drink using simple pantry garnishes.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Recipe 1 -->
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+              <div class="h-48 w-full bg-cover bg-center" data-alt="Chilled rose milk boba tea drink served in a modern glass with translucent pink tapioca pearls, milk froth, and fresh rose petals on a pastel pink background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmxKo9SeSynkB6XmGxuZ8V_pFoyjfIDm8lKFVGGEgSwA5KIswiodW3BR-OAuOweE6bxqgRCr1ZXOy3-cNOBIqlzQ4u1A6dY9W81XE6KoQL6emtR8yW2W9brKzg0d-kHt1mv2RhRIVgZPUXaMAWtSWp246-whtMAXMgEd_se37Pw8wXagQ0P3cXAVZDxQkbW5CBc9Ng_BgX-k2lRN9TjpqCTGTUyLBferAHdvwh4mJaVpJUCmCfd_Xl')"></div>
+              <div class="p-space-lg flex flex-col gap-space-sm flex-1 justify-between">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-0.5 rounded-full font-bold">3 Mins Prep</span>
+                    <span class="font-body-sm text-body-sm text-outline">Café Style</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">Rose Milk Boba Splash</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Pour cold Winkin' Cow Rose over warm chewy brown sugar or rose boba pearls. Top with cracked ice cubes and milk foam.
+                  </p>
+                </div>
+                <div class="pt-space-md border-t-0 flex items-center justify-between text-primary font-label-md text-label-md cursor-pointer hover:underline">
+                  <span>View Ingredient Guide</span>
+                  <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                </div>
+              </div>
+            </div>
+            <!-- Recipe 2 -->
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+              <div class="h-48 w-full bg-cover bg-center" data-alt="Royal Indian Falooda tall glass dessert loaded with silky rose milk, thin falooda sev noodles, sabja basil seeds, vanilla ice cream scoop and chopped pistachios in dramatic studio lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7sRBUxpKqhgogHh1ZAFk5f9KtDx32W6suamvOOrYF8iU2q8pjA-tcU0q9jcCK72EfQ2i71KpkNweoWJZfylEmU3KP_aRjgdJJQxtveSGURhvv5Lqt__QpC1BF4NVjoCtYZ3-kn0Jwu-UMMKvBva2mEOJpHNEJhOyZh2tedE7JMlM28iTQ9kKf8QNlMF9aX3mOe6V_5PzLRsQ8oqo5D6bNB5Dw8ivWgD3kEbptstS6gVocTzX4MF4z')"></div>
+              <div class="p-space-lg flex flex-col gap-space-sm flex-1 justify-between">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm bg-secondary-fixed text-secondary px-space-sm py-0.5 rounded-full font-bold">5 Mins Prep</span>
+                    <span class="font-body-sm text-body-sm text-outline">Royal Treat</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">Winkin' Royal Falooda</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Layer soaked basil seeds (sabja), soft vermicelli noodles, chilled Winkin' Rose milk, and a scoop of velvety vanilla kulfi.
+                  </p>
+                </div>
+                <div class="pt-space-md border-t-0 flex items-center justify-between text-primary font-label-md text-label-md cursor-pointer hover:underline">
+                  <span>View Ingredient Guide</span>
+                  <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                </div>
+              </div>
+            </div>
+            <!-- Recipe 3 -->
+            <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+              <div class="h-48 w-full bg-cover bg-center" data-alt="Two frozen creamy pink rose milk popsicles resting on a frosted marble surface garnished with dried edible rose petals and crushed almonds" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMWuGjhBZta0TQ3B2WzOxFiWCMuYrv1XNmyWz1LKxpJbcBYzeLJszY62YLzMM0rA_DY0G7RaFJC1wAiQ-5TAECmZ-vetu4sC4KVUP3uj1bSWTd5kEONfb-_fdgPcj3rKNGpC3KAHlvDjRlzcskr3t_mUV9qCzPeWOE7MBEMgTyuzBZuq5Lg6JH4j1v5_TY31rgEBAYP14Zm1x0EQEF_e67RKS1exqzDFHKbL63otrl6185HJDbZOVE')"></div>
+              <div class="p-space-lg flex flex-col gap-space-sm flex-1 justify-between">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm bg-surface-container-highest text-primary px-space-sm py-0.5 rounded-full font-bold">Freeze &amp; Enjoy</span>
+                    <span class="font-body-sm text-body-sm text-outline">Zero Sugar Added</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface pt-space-xs">Velvet Rose Popsicles</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Pour Winkin' Cow straight into silicone popsicle molds with almond slivers. Freeze 4 hours for an irresistible summer ice pop.
+                  </p>
+                </div>
+                <div class="pt-space-md border-t-0 flex items-center justify-between text-primary font-label-md text-label-md cursor-pointer hover:underline">
+                  <span>View Ingredient Guide</span>
+                  <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: SOCIAL BUZZ & REVIEWS ("The Wink Tribe") -->
+      <section class="max-w-7xl mx-auto px-margin py-space-2xl w-full" id="reviews-section">
+        <div class="text-center max-w-2xl mx-auto pb-space-xl">
+          <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Community Love</span>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">The Wink Tribe Experiences</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant pt-space-xs">
+            Over 15,000+ sippers rating us 4.9 stars across India.
+          </p>
+        </div>
+        <!-- Review Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pb-space-xl">
+          <!-- Review 1 -->
+          <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface">"Hits the sweet spot perfectly!"</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                "Most rose drinks taste like pure syrup. Winkin' Cow got the delicate balance just right—creamy milk taste first, followed by sweet fragrant rose."
+              </p>
+            </div>
+            <div class="flex items-center gap-space-sm pt-space-sm">
+              <div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary">
+                AP
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface leading-tight">Ananya P.</span>
+                <span class="font-body-sm text-body-sm text-outline text-[12px] leading-tight">Verified Buyer • Mumbai</span>
+              </div>
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface">"Kids' new favorite 4PM ritual"</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                "My daughter is stubborn about drinking plain milk, but she finishes a chilled Winkin' Cow Rose in two minutes flat. With 8.5g protein, I don't feel guilty."
+              </p>
+            </div>
+            <div class="flex items-center gap-space-sm pt-space-sm">
+              <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary">
+                RS
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface leading-tight">Rohit Sharma</span>
+                <span class="font-body-sm text-body-sm text-outline text-[12px] leading-tight">Verified Buyer • Bengaluru</span>
+              </div>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface">"Best post-workout cooler"</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                "I keep a pack of 6 chilled in the fridge after evening gym sessions. Instantly hydrates and feels so luxurious. Absolute summer lifesaver."
+              </p>
+            </div>
+            <div class="flex items-center gap-space-sm pt-space-sm">
+              <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary">
+                MN
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-md text-label-md text-on-surface leading-tight">Meera Nair</span>
+                <span class="font-body-sm text-body-sm text-outline text-[12px] leading-tight">Verified Buyer • Delhi NCR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Instagram Community Banner Strip -->
+        <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+          <div class="flex items-center gap-space-md">
+            <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+              <span class="material-symbols-outlined text-[24px]">photo_camera</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-headline-sm text-on-surface">Tag #WinkinMoments #RoseWink</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Share your chilled bottle on Instagram to win monthly crates of Winkin' Cow!</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <span class="font-label-sm text-label-sm text-secondary font-bold">@BritanniaDairy</span>
+            <button class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:scale-105 transition-all">
+              Follow Along
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: FAQ ACCORDION & INSTANT DELIVERY FINDER -->
+      <section class="w-full bg-surface-container-low py-space-2xl" id="delivery-faq-section">
+        <div class="max-w-7xl mx-auto px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+            <!-- FAQ Accordion Left -->
+            <div class="lg:col-span-7 flex flex-col gap-space-md">
+              <div class="flex flex-col gap-space-xs">
+                <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Clear Facts</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">Frequently Asked Questions</h2>
+              </div>
+              <div class="flex flex-col gap-space-sm pt-space-xs" id="faq-container">
+                <!-- FAQ 1 -->
+                <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm cursor-pointer transition-colors" onclick="toggleFaq(this)">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-lg text-label-lg text-on-surface">What gives Winkin' Cow Rose its authentic aroma?</span>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-200 icon-arrow">expand_more</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs hidden faq-body">
+                    We infuse distilled natural Damask rose essence paired with creamy double-toned whole dairy milk. There are no harsh chemical synthetic fragrances.
+                  </p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm cursor-pointer transition-colors" onclick="toggleFaq(this)">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-lg text-label-lg text-on-surface">How long does an unopened bottle stay fresh?</span>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-200 icon-arrow">expand_more</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs hidden faq-body">
+                    Thanks to our state-of-the-art Aseptic Ultra High Temperature (UHT) packaging, unopened bottles remain fresh for up to 6 months at room temperature. Once opened, refrigerate and consume within 24 hours.
+                  </p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm cursor-pointer transition-colors" onclick="toggleFaq(this)">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-lg text-label-lg text-on-surface">Is it 100% vegetarian and kid-friendly?</span>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-200 icon-arrow">expand_more</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs hidden faq-body">
+                    Yes! It features the green vegetarian mark and is packed with 8.5g pure dairy protein, 35% calcium, and Vitamin D3—making it a healthy, joyful drink for school kids and adults alike.
+                  </p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm cursor-pointer transition-colors" onclick="toggleFaq(this)">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-lg text-label-lg text-on-surface">Should I shake it before sipping?</span>
+                    <span class="material-symbols-outlined text-primary transition-transform duration-200 icon-arrow">expand_more</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs hidden faq-body">
+                    Absolutely! Give it a hearty 5-second shake while chilled to release micro-bubbles that turn the texture exceptionally velvety.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Right: 10-Minute Delivery & Store Locator Card -->
+            <div class="lg:col-span-5 flex flex-col justify-between bg-surface-container-lowest p-space-xl rounded-xl shadow-lg">
+              <div class="flex flex-col gap-space-md">
+                <div class="w-12 h-12 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[28px]">electric_moped</span>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Lightning Delivery</span>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Craving Chilled Rose Milk Right Now?</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Order directly or get it delivered in 10 minutes from your favourite quick-commerce hubs.
+                  </p>
+                </div>
+                <!-- Quick Commerce Logos / Badges -->
+                <div class="flex flex-wrap gap-space-xs pt-space-xs">
+                  <span class="px-space-md py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Blinkit (10 mins)
+                  </span>
+                  <span class="px-space-md py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-purple-600"></span> Zepto (10 mins)
+                  </span>
+                  <span class="px-space-md py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-orange-500"></span> Instamart (12 mins)
+                  </span>
+                </div>
+                <!-- Pincode Check input -->
+                <div class="flex flex-col gap-space-xs pt-space-sm">
+                  <label class="font-label-sm text-label-sm text-outline">Check Local Store Availability</label>
+                  <div class="flex items-center rounded-full bg-surface-container-low p-1 shadow-inner">
+                    <input class="w-full px-space-md py-space-xs bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="pincode-input" placeholder="Enter 6-digit Pincode (e.g. 560001)" type="text"/>
+                    <button class="px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-colors" onclick="checkPincode()">
+                      Verify
+                    </button>
+                  </div>
+                  <span class="font-body-sm text-body-sm text-secondary font-bold hidden pt-1" id="pincode-status">
+                    🎉 Instant Delivery available in your area!
+                  </span>
+                </div>
+              </div>
+              <div class="pt-space-lg flex items-center gap-space-xs text-outline font-body-sm text-body-sm">
+                <span class="material-symbols-outlined text-[18px]">storefront</span>
+                <span>Also stocked across 150,000+ local Britannia retail partner stores.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="w-full bg-surface-container-low pt-space-2xl pb-space-xl shadow-[0_1px_8px_rgba(230,30,80,0.04)] relative z-20">
+    <div class="max-w-7xl mx-auto px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl">
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+              <span class="material-symbols-outlined">notifications_active</span>
+            </div>
+            <span class="font-headline-sm text-headline-sm text-primary">Britannia Winkin' Cow</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Irresistibly thick, cold, and rich flavoured dairy beverage crafted with creamy whole milk goodness and fragrant floral bliss. Shake well, drink chilled, and wink at life!
+          </p>
+          <div class="flex items-center gap-space-sm pt-space-xs">
+            <div class="px-space-md py-space-xs bg-surface-container rounded-full text-secondary font-label-sm text-label-sm">Pure Milk Goodness</div>
+            <div class="px-space-md py-space-xs bg-surface-container rounded-full text-primary font-label-sm text-label-sm">No Artificial Preservatives</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-lg text-label-lg text-on-surface">Flavour Universe</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#scroll-hero">Winkin' Strawberblicious</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Thick Chocolate Milkshake</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Classic Vanilla Shake</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Creamy Mango Delight</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Almond Carnival</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-lg text-label-lg text-on-surface">Explore &amp; Learn</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Our Dairy Promise</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Nutrition &amp; Calcium Facts</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Chilled Summer Mocktails</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Find Near You</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Dairy Care</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <span class="font-label-lg text-label-lg text-on-surface">Winkin' Club Letter</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Get refreshing shake recipes, festival specials, and chilled merch drops.</p>
+          <div class="flex flex-col gap-space-xs">
+            <div class="flex items-center rounded-full bg-surface-container-lowest p-space-xs shadow-[0_4px_12px_rgba(62,16,30,0.06)]">
+              <input class="w-full px-space-md py-space-xs bg-transparent text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none" placeholder="Your chill email..." type="email"/>
+              <button class="p-space-xs rounded-full bg-primary text-on-primary hover:bg-primary-container transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm text-on-surface-variant">
+            <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">share</span>
+            <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">photo_camera</span>
+            <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">play_circle</span>
+            <span class="material-symbols-outlined hover:text-primary transition-colors cursor-pointer">chat</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container rounded-lg p-space-lg mb-space-lg">
+        <div class="flex items-center gap-space-md">
+          <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold shadow-[0_4px_12px_rgba(62,16,30,0.06)]">
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+          <div>
+            <span class="font-label-md text-label-md text-on-surface block">Britannia Heritage &amp; Quality Assured</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Crafted with pride by Britannia Industries Ltd. UHT processed flavoured milk with genuine Indian heritage and high dairy standards.</p>
+          </div>
+        </div>
+        <div class="font-label-sm text-label-sm text-primary bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_4px_12px_rgba(62,16,30,0.06)] whitespace-nowrap">
+          Since 1892 • Trust in Every Drop
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline font-body-sm text-body-sm pt-space-md">
+        <p>© 2026 Britannia Industries Limited. All Rights Reserved. Winkin' Cow is a registered trademark.</p>
+        <div class="flex items-center gap-space-md">
+          <a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-on-surface transition-colors" href="#">Terms of Use</a>
+          <a class="hover:text-on-surface transition-colors" href="#">Allergen Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts for Lower Sections -->
+  <script>
+    // FAQ Accordion Handler
+    function toggleFaq(element) {
+      const body = element.querySelector('.faq-body');
+      const arrow = element.querySelector('.icon-arrow');
+      if (body) {
+        const isHidden = body.classList.contains('hidden');
+        document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+        document.querySelectorAll('.icon-arrow').forEach(a => a.classList.remove('rotate-180'));
+        if (isHidden) {
+          body.classList.remove('hidden');
+          if (arrow) arrow.classList.add('rotate-180');
+        }
+      }
+    }
+
+    // Pincode Verifier
+    function checkPincode() {
+      const input = document.getElementById('pincode-input');
+      const status = document.getElementById('pincode-status');
+      if (input && input.value.trim().length >= 5) {
+        status.classList.remove('hidden');
+        status.innerText = "🎉 Cold stocks ready in your zone! Delivery in 10-15 mins.";
+      } else if (status) {
+        status.classList.remove('hidden');
+        status.innerText = "Please enter a valid 6-digit PIN code.";
+      }
+    }
+  </script>
+
+  <!-- Application Animation Engine -->
+  <script src="app.js"></script>
+</body>
+</html>
